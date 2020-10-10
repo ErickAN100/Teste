@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body class="has-fixed-sidenav"> 
+	<div class="block">
+		<nav>
+			<div id="nav-mobile" class="nav-wrapper blue">
+				<img src="image/logo/LogoEducaHack.png" class=" logo body brand-logo">
+			</div>
+		</nav>
+		<main class="main">
+			<div class="center">
+		      	<img src="image/login/avatar.png" class="avatar">
+		      	<h1 class="indigo-text">Faça o login na sua conta</h1>
+			<div class="grey lighten-4 row form">
+		   	<form name="form" method="post" action="Controle">
+		   	<input type="hidden" name="acao" value="1">
+		    	<div class='row teste1'>
+			   		<div class='input-field col s12'>
+			        	<label for="first_name">Login</label>
+			            <input placeholder="login" type='text' name='login' required/>
+			        </div>
+				</div>
+		       	<div class='row'>
+		        	<div class='input-field col s12'>
+		            	<input placeholder="senha" class='validate' type='password' name='senha'/>
+		           		<label for="password">Senha</label>
+					</div>      
+				</div><br/>
+		       	<div class='row'>
+					<button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+		       	</div>
+		       	
+			</form>
+			<a href="Recover.jsp">Esqueci minha senha</a>
+			</div>
+			</div>
+		</main>
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+				<div class="container center">
+					&copy;2020 Copyright EducaHack
+				</div>
+			</div>
+		</footer>
+	</div>
+	    <script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.scrollspy').scrollSpy();
+			});
+		</script>
+</body>
+</html>
